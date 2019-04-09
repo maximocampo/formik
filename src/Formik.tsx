@@ -455,7 +455,9 @@ export class Formik<Values = FormikValues> extends React.Component<
   };
 
   executeInvalidSubmit = () => {
-    this.props.onInvalidSubmit(this.state.values, this.getFormikActions());
+    if (this.props.onInvalidSubmit) {
+      this.props.onInvalidSubmit(this.state.values, this.getFormikActions());
+    }
   };
 
   handleBlur = (
