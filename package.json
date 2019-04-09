@@ -1,7 +1,7 @@
 {
   "name": "formik",
   "description": "Forms in React, without tears",
-  "version": "1.5.2",
+  "version": "1.5.4r",
   "license": "MIT",
   "author": "Jared Palmer <jared@palmer.net>",
   "repository": "jaredpalmer/formik",
@@ -32,7 +32,6 @@
     "build": "cross-env NODE_ENV=production tsc -p tsconfig.base.json  && rollup -c && rimraf compiled && cp-cli ./index.js ./dist/index.js",
     "prepublish": "npm run build",
     "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*' 'test/**/*' 'README.md'",
-    "precommit": "lint-staged",
     "storybook": "start-storybook -p 9001",
     "addc": "all-contributors add",
     "start-website": "cd website && yarn start",
