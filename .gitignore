@@ -8,6 +8,10 @@ legacy.d.ts
 *.orig
 .DS_Store
 
+compiled/
+dist/src/
+dist/test/
+
 node_modules
 
 lib/core/metadata.js
@@ -18,3 +22,4 @@ website/build/
 website/yarn.lock
 website/node_modules
 website/i18n/*
+
